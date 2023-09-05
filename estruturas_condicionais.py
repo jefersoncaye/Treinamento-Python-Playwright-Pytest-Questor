@@ -7,6 +7,8 @@ Operadores Logicos
 <= Menor ou Igual
 > Maior
 < Menor
+or OU
+and E
 """
 
 """
@@ -67,6 +69,7 @@ if boleano:  # Equivalente a if boleano == True
 IF ELSE e ELIF
 """
 
+"""
 numero = int(input('Digite um numero: '))
 
 if numero == 1:
@@ -79,3 +82,23 @@ elif numero == 3: # Explicar a diferença entre esse caso ser um if e um elif
     print('Numero = 3')
 else:
     print('Numero não é 1, não é 2 e tambem não é maior que 2')
+"""
+
+"""
+OR e AND
+"""
+
+fruta = 'tomate'
+numero = 25
+objeto = 'Pratos'
+
+if fruta == 'tomate' or numero == 40:
+    print('Fruta é igual "tomate" OU numero é igual 40')
+
+if fruta == 'tomate' and numero == 40:
+    print('Fruta é igual "tomate" E numero é igual 40')
+
+if (fruta == 'tomate' and numero == 40) or objeto == 'Prato': # sempre que utilizar and e or juntos optar por usar parenteses para deixar mais legivel
+    print('Fruta é igual "tomate" E numero é igual 40 OU Objeto é igual "Prato"')
+
+
